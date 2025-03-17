@@ -1,0 +1,528 @@
+/* Css for min-width=768px (for tablet and desktop) */
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Martel Sans", sans-serif;
+  /* border: 1px solid white; */
+}
+body {
+  background-color: #232323;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(bgimage.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main nav {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+  margin: 1vmax auto;
+  width: 80vw;
+}
+.main nav .logo img {
+  width: 10vmax;
+  min-width: 50px;
+  margin: auto;
+}
+nav .button button {
+  position: relative;
+  z-index: 10;
+  width: 5vmax;
+  padding: auto;
+  height: 2vmax;
+  font-size: 1vmax;
+  border-radius: 0.3vmax;
+  color: white;
+}
+nav .button {
+  width: 15vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vmax;
+}
+.content {
+  /* border: 2px solid red; */
+  /* height: 84.9%; */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.content .c1 {
+  font-size: 48px;
+  font-weight: 900;
+  /* margin-top: 8vmax; */
+  padding: 10vmax 0 1vmax;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+.content .c2 {
+  font-size: 24px;
+  padding: 0 1vmax;
+  margin-bottom: 1vmax;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+.content .c3 {
+  padding: 0 1vmax;
+  font-size: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+.content .c4 .input {
+  width: 100%;
+  height: 20vh;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vmax;
+  margin-bottom: 2vmax;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.c4 .input input {
+  font-size: 16px;
+  height: 3.5vmax;
+  width: 20vmax;
+  text-align: start;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-style: none;
+  border: 0.1px solid white;
+  font-size: 15px;
+  padding-left: 15px;
+  color: white;
+  border-radius: 5px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: 30%;
+  }
+}
+.c4 .input button {
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  border-style: none;
+  height: 3.6vmax;
+  width: 14vmax;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    width: 40%;
+    height: 30%;
+    font-size: 0.875rem;
+  }
+}
+.content1 {
+  display: flex;
+  margin: 7px auto;
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  max-width: 100vw;
+  padding: 0 10vw;
+  gap: 20px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.v1 {
+  position: relative;
+  margin-bottom: 50px;
+}
+.v1 img {
+  position: relative;
+  z-index: 10;
+  width: 40vw;
+  height: 31.5vw;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 60vw;
+  }
+}
+.content1 .v1 video {
+  position: absolute;
+  right: 5vw;
+  top: 6.7vw;
+  overflow: hidden;
+  width: 30vw;
+  height: fit-content;
+  @media screen and (max-width: 768px) {
+    right: 10vw;
+    top: 12vw;
+    height: fit-content;
+    width: 59vw;
+  }
+}
+.content1 .t1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+.content2 {
+  display: flex;
+  margin: 7px auto;
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  max-width: 100vw;
+  padding: 0 5vw;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+.v2 {
+  position: relative;
+}
+.v2 img {
+  width: 45vw;
+  margin: 50px auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.content2 .t2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+.content3 {
+  display: flex;
+  margin: 7px auto;
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  max-width: 100vw;
+  padding: 0 10vw;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.v3 {
+  position: relative;
+  margin: 50px 0px;
+}
+.v3 img {
+  position: relative;
+  z-index: 10;
+  width: 38vw;
+  height: 30.5vw;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: fit-content;
+  }
+}
+.content3 .v3 video {
+  position: absolute;
+  right: 6.6vw;
+  top: 3.4vw;
+  overflow: hidden;
+  width: 24.5vw;
+  height: fit-content;
+  @media screen and (max-width: 768px) {
+    top: 5.4vw;
+    right: 15vw;
+    width: 48vw;
+  }
+}
+.content3 .t3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+.content4 {
+  display: flex;
+  margin: 7px auto;
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  justify-content: center;
+  max-width: 100vw;
+  padding: 0 5vw;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+.v4 {
+  position: relative;
+}
+.v4 img {
+  width: 45vw;
+  margin: 50px auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: fit-content;
+  }
+}
+.content4 .t4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+.faqbox .b1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+.faqbox {
+  margin: 7px 0px;
+  background-color: black;
+  padding: 50px 5vw 30px 5vw;
+}
+.faqbox > .faq > .f:hover {
+  background-color: #414141;
+}
+footer {
+  margin: 7px 0vw 7px 0vw;
+  background-color: rgb(0, 0, 0);
+  padding: 100px 5vw 150px 12vw;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer ul li {
+  text-align: start;
+  width: 19.7vw;
+  color: rgb(179, 167, 167);
+  margin: 5px 0px;
+  @media screen and (max-width: 768px) {
+    width: 48.9%;
+  }
+}
+.footer ul li a {
+  color: rgb(179, 167, 167);
+  font-size: 0.875rem;
+}
+
+.content1 .text1 {
+  font-size: 3rem;
+  text-align: start;
+  font-weight: 900;
+  line-height: 60px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 38px;
+  }
+}
+.content1 .text2 {
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 400;
+  line-height: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.content2 .text1 {
+  font-size: 3rem;
+  text-align: start;
+  font-weight: 900;
+  line-height: 60px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 38px;
+  }
+}
+.content2 .text2 {
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 400;
+  line-height: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.content3 .text1 {
+  font-size: 3rem;
+  text-align: start;
+  font-weight: 900;
+  line-height: 60px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 38px;
+  }
+}
+.content3 .text2 {
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 400;
+  line-height: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.content4 .text1 {
+  font-size: 3rem;
+  text-align: start;
+  font-weight: 900;
+  line-height: 60px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 38px;
+  }
+}
+.content4 .text2 {
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 400;
+  line-height: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+.f {
+  display: flex;
+  color: white;
+  width: 70vw;
+  margin: 7px;
+  font-size: 24px;
+  padding: 24px;
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    padding: 24px 10px;
+    font-size: 1.125rem;
+  }
+}
+.faqdetail {
+  color: white;
+  width: 70vw;
+  margin-bottom: 7px;
+  font-size: 24px;
+  height: 0px;
+  overflow: hidden;
+  transition: all ease 0.8s;
+  background-color: #2d2d2d;
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+.open {
+  height: auto;
+  padding: 24px;
+  @media screen and (max-width: 768px) {
+    padding: 24px 10px;
+    font-size: 0.8rem;
+  }
+  .faqdetail p {
+    text-align: start;
+  }
+  .f .t {
+    text-align: start;
+  }
+
+  /* .hidden {
+  display: none;
+} */
+  .email {
+    margin: 20px;
+    width: 40vw;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+  }
+  .email input {
+    width: 60%;
+    border-style: none;
+    height: 50px;
+    background-color: #1a1a1a;
+    text-align: start;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    @media screen and (max-width: 768px) {
+      width: 85%;
+    }
+  }
+  .email button {
+    width: 35%;
+    margin: 0 0 0 2px;
+    height: 50px;
+    background-color: #e50914;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 3.5px;
+    color: white;
+    font-weight: 500;
+    @media screen and (max-width: 768px) {
+      width: 55%;
+    }
+  }
+}

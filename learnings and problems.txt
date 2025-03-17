@@ -1,0 +1,8 @@
+Learnings: 
+1.Real time application of Flex Box and Lists.
+2.Positioning of images and videos for making it a single frame view.
+3.Application of media queries to attain responsiveness.
+Problems:
+1.faced problem when using "px" as unit to resize the content.
+2.faced problem in media queries for the element, having inline CSS.
+3.faced problem in maintaining the code.
