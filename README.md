@@ -1,5 +1,4 @@
 # Netflix-Clone
-A Netflix UI clone built from scratch using HTML/CSS & JS. My first step into frontend development, focusing on layout structure and design precision.
 
 Project Overview: Netflix homepage UI clone
 Tech Stack: HTML, CSS, JS
