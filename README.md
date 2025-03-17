@@ -10,3 +10,5 @@ Features:
 Future Improvements:
         1. Add dynamic content with JavaScript
         2. Implement a "watch trailer" feature.
+
+⚠️ **Disclaimer:** This project is a UI clone created for educational purposes only. It is not affiliated with or endorsed by Netflix.
